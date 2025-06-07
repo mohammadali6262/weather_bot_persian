@@ -1,0 +1,12 @@
+
+services:
+  - type: web
+    name: telegram-weather-bot
+    env: python
+    buildCommand: ""
+    startCommand: "python bot.py"
+    envVars:
+      - key: BOT_TOKEN
+        value: YOUR_BOT_TOKEN
+      - key: WEATHER_API_KEY
+        value: YOUR_WEATHER_API_KEY
